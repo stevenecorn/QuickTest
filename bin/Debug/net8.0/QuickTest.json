@@ -1,0 +1,439 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Sofa",
+            "color": [
+                "White",
+                "Black",
+                "Red"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Soft Fabric sofa"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Armchair",
+            "color": [
+                "Brown",
+                "Gray",
+                "Blue"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Comfortable armchair with armrests"
+                },
+                {
+                    "name": "Material",
+                    "order": 2,
+                    "value": "Fabric"
+                },
+                {
+                    "name": "Size",
+                    "order": 3,
+                    "value": "Medium"
+                },
+                {
+                    "name": "Style",
+                    "order": 4,
+                    "value": "Modern"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Coffee Table",
+            "color": [
+                "Wood",
+                "Glass",
+                "Metal"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Sturdy coffee table with storage"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bookshelf",
+            "color": [
+                "Oak",
+                "Black",
+                "White"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Versatile bookshelf for organizing books and decor"
+                },
+                {
+                    "name": "Size",
+                    "order": 2,
+                    "value": "Large"
+                },
+                {
+                    "name": "Material",
+                    "order": 3,
+                    "value": "Wood"
+                },
+                {
+                    "name": "Style",
+                    "order": 4,
+                    "value": "Traditional"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Dining Table",
+            "color": [
+                "Brown",
+                "White",
+                "Gray"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Elegant dining table for family gatherings"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bed Frame",
+            "color": [
+                "Black",
+                "Brown",
+                "White"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Stylish bed frame for a comfortable sleep"
+                },
+                {
+                    "name": "Size",
+                    "order": 2,
+                    "value": "Queen"
+                },
+                {
+                    "name": "Material",
+                    "order": 3,
+                    "value": "Metal"
+                },
+                {
+                    "name": "Style",
+                    "order": 4,
+                    "value": "Contemporary"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Wardrobe",
+            "color": [
+                "White",
+                "Gray",
+                "Oak"
+            ],
+            "Details": [
+                {
+                    "name": "Feature",
+                    "order": 1,
+                    "value": "Spacious wardrobe for organizing clothes and accessories"
+                }
+            ]
+        }
+    ],
+
+    "customers":[
+        {
+            "id": "8f14fe04-1267-48b6-bf31-edf23bbb8caf",
+            "joined": "4/1/2024",
+            "firstName": "Chris",
+            "lastName": "Davis",
+            "middleName": "",
+            "dob": "1/1/1990",
+            "email": "c.davis-1990@test.com",
+            "notes": "Regular customer, prefers online communication.",
+            "status": "Active"
+        },
+        {
+            "id": "f55e4fcf-0726-4141-90f5-09f6e1b797d0",
+            "joined": "2/15/2023",
+            "firstName": "Jessica",
+            "lastName": "Smith",
+            "middleName": "Lynn",
+            "dob": "5/10/1985",
+            "email": "j.smith85@test.com",
+            "notes": "Frequently purchases home decor items.",
+            "status": "Active"
+        },
+        {
+            "id": "b06bb97f-ff95-4fa7-8b1b-136df6d91f1c",
+            "joined": "7/22/2022",
+            "firstName": "Michael",
+            "lastName": "Johnson",
+            "middleName": "Lee",
+            "dob": "11/20/1978",
+            "email": "m.johnson78@test.com",
+            "notes": "Enjoys browsing new furniture designs.",
+            "status": "Active"
+        },
+        {
+            "id": "97b89475-b0ef-49c2-97cf-d60dc3727435",
+            "joined": "10/5/2023",
+            "firstName": "Emily",
+            "lastName": "Brown",
+            "middleName": "Anne",
+            "dob": "8/15/1992",
+            "email": "e.brown92@test.com",
+            "notes": "Interested in outdoor furniture options.",
+            "status": "Active"
+        },
+        {
+            "id": "20f44192-bd02-4143-bf09-2a8c3f4bc3e8",
+            "joined": "6/12/2022",
+            "firstName": "David",
+            "lastName": "Martinez",
+            "middleName": "James",
+            "dob": "3/8/1980",
+            "email": "d.martinez80@test.com",
+            "notes": "Looking for bedroom furniture for new house.",
+            "status": "Active"
+        },
+        {
+            "id": "c4a16567-cadf-4bfc-9e86-4f6d31748b5a",
+            "joined": "9/29/2023",
+            "firstName": "Amanda",
+            "lastName": "Miller",
+            "middleName": "Nicole",
+            "dob": "7/18/1987",
+            "email": "a.miller87@test.com",
+            "notes": "Prefers eco-friendly furniture options.",
+            "status": "Active"
+        },
+        {
+            "id": "fa855fbf-d39a-4ae2-929b-508e16ab7e2e",
+            "joined": "3/8/2022",
+            "firstName": "Daniel",
+            "lastName": "Garcia",
+            "middleName": "Robert",
+            "dob": "12/25/1975",
+            "email": "d.garcia75@test.com",
+            "notes": "Looking for a new dining table set.",
+            "status": "Active"
+        },
+        {
+            "id": "e63c21e0-9e92-4f44-9496-4c515d46fc5e",
+            "joined": "11/14/2023",
+            "firstName": "Sarah",
+            "lastName": "Wilson",
+            "middleName": "Elizabeth",
+            "dob": "9/5/1989",
+            "email": "s.wilson89@test.com",
+            "notes": "Interested in office furniture for home workspace.",
+            "status": "Active"
+        },
+        {
+            "id": "9df041bb-0d4f-45e8-9242-0b14a62ee50a",
+            "joined": "5/20/2022",
+            "firstName": "Jason",
+            "lastName": "Rodriguez",
+            "middleName": "Andrew",
+            "dob": "4/12/1983",
+            "email": "j.rodriguez83@test.com",
+            "notes": "Has a preference for minimalist furniture designs.",
+            "status": "Active"
+        },
+        {
+            "id": "cfca4e51-fda9-4f62-8e5a-d02d6d77e751",
+            "joined": "8/18/2023",
+            "firstName": "Jennifer",
+            "lastName": "Lopez",
+            "middleName": "Marie",
+            "dob": "2/28/1986",
+            "email": "j.lopez86@test.com",
+            "notes": "Needs new outdoor patio furniture for summer.",
+            "status": "Active"
+        },
+        {
+            "id": "08b1d5c4-3f02-4d89-b0eb-1705e9a9d54b",
+            "joined": "12/25/2022",
+            "firstName": "Matthew",
+            "lastName": "Perez",
+            "middleName": "Christopher",
+            "dob": "6/20/1979",
+            "email": "m.perez79@test.com",
+            "notes": "Looking for unique accent pieces for living room.",
+            "status": "Active"
+        },
+        {
+            "id": "a20fb0fb-5b8f-4ff0-804f-6b171ab92e3b",
+            "joined": "1/30/2023",
+            "firstName": "Ashley",
+            "lastName": "Gonzalez",
+            "middleName": "Marie",
+            "dob": "10/15/1984",
+            "email": "a.gonzalez84@test.com",
+            "notes": "Interested in matching bedroom furniture set.",
+            "status": "Active"
+        },
+        {
+            "id": "643a52d7-58eb-4621-80a9-5a527f9b9a6f",
+            "joined": "9/5/2022",
+            "firstName": "Justin",
+            "lastName": "Hernandez",
+            "middleName": "Paul",
+            "dob": "11/2/1977",
+            "email": "j.hernandez77@test.com",
+            "notes": "Needs to replace worn-out living room furniture.",
+            "status": "Active"
+        },
+        {
+            "id": "f4090d05-50d9-45f0-bf37-bc2a4373e89f",
+            "joined": "6/10/2023",
+            "firstName": "Brittany",
+            "lastName": "Moore",
+            "middleName": "Nicole",
+            "dob": "3/28/1988",
+            "email": "b.moore88@test.com",
+            "notes": "Looking for high-quality outdoor furniture.",
+            "status": "Active"
+        },
+        {
+            "id": "31b2573c-60ed-4d61-b8a5-71f3c8c1f482",
+            "joined": "10/12/2022",
+            "firstName": "Andrew",
+            "lastName": "Rivera",
+            "middleName": "Thomas",
+            "dob": "7/23/1981",
+            "email": "a.rivera81@test.com",
+            "notes": "Needs to furnish new apartment.",
+            "status": "Active"
+        },
+        {
+            "id": "d2e7de8e-856a-47a0-b453-8ad55b6e3db4",
+            "joined": "4/18/2023",
+            "firstName": "Megan",
+            "lastName": "Lee",
+            "middleName": "Michelle",
+            "dob": "12/10/1982",
+            "email": "m.lee82@test.com",
+            "notes": "Interested in furniture with built-in storage solutions.",
+            "status": "Active"
+        },
+        {
+            "id": "e64f2e28-685f-413a-b4fb-51c9a145da17",
+            "joined": "11/25/2022",
+            "firstName": "James",
+            "lastName": "Lewis",
+            "middleName": "Ryan",
+            "dob": "9/30/1976",
+            "email": "j.lewis76@test.com",
+            "notes": "Prefers minimalist and modern furniture styles.",
+            "status": "Active"
+        },
+        {
+            "id": "6f9ab4f2-d180-4eb9-9c31-df39978ad9c5",
+            "joined": "3/14/2023",
+            "firstName": "Nicole",
+            "lastName": "Walker",
+            "middleName": "Anne",
+            "dob": "8/8/1983",
+            "email": "n.walker83@test.com",
+            "notes": "Looking for furniture suitable for small spaces.",
+            "status": "Active"
+        },
+        {
+            "id": "92b2432e-3d65-4f35-94c7-0f198c7698fd",
+            "joined": "8/22/2022",
+            "firstName": "Robert",
+            "lastName": "Young",
+            "middleName": "William",
+            "dob": "4/5/1979",
+            "email": "r.young79@test.com",
+            "notes": "Needs new bedroom furniture for growing family.",
+            "status": "Active"
+        },
+        {
+            "id": "5f3c91d8-6c5e-4a29-8996-0e9ef4a3091d",
+            "joined": "5/3/2023",
+            "firstName": "Kimberly",
+            "lastName": "Scott",
+            "middleName": "Ann",
+            "dob": "2/14/1984",
+            "email": "k.scott84@test.com",
+            "notes": "Interested in rustic furniture designs.",
+            "status": "Active"
+        },
+        {
+            "id": "9c684f5a-422f-47ab-8fa6-97b73f03b187",
+            "joined": "8/3/2023",
+            "firstName": "Rachel",
+            "lastName": "Allen",
+            "middleName": "Marie",
+            "dob": "6/20/1986",
+            "email": "r.allen86@test.com",
+            "notes": "Account on hold due to payment issues.",
+            "status": "Delinquent"
+        },
+        {
+            "id": "7a42e28d-6709-4e47-aaf0-823b5f6b8934",
+            "joined": "1/15/2023",
+            "firstName": "Thomas",
+            "lastName": "Jackson",
+            "middleName": "Edward",
+            "dob": "9/12/1983",
+            "email": "t.jackson83@test.com",
+            "notes": "Order canceled, awaiting refund.",
+            "status": "Canceled"
+        },
+        {
+            "id": "bd922299-c2b7-4ad0-9512-c24de4607222",
+            "joined": "5/10/2022",
+            "firstName": "Lauren",
+            "lastName": "Wright",
+            "middleName": "Nicole",
+            "dob": "12/8/1979",
+            "email": "l.wright79@test.com",
+            "notes": "Pending account verification.",
+            "status": "Pending"
+        },
+        {
+            "id": "e7f49d79-3834-4a4b-9e12-12de7cf8dc68",
+            "joined": "7/8/2023",
+            "firstName": "Tyler",
+            "lastName": "Harris",
+            "middleName": "Joseph",
+            "dob": "3/25/1987",
+            "email": "t.harris87@test.com",
+            "notes": "Pending account review for eligibility.",
+            "status": "Pending"
+        },
+        {
+            "id": "8d50152e-17f7-4a1d-b3c8-04094aa5c1f7",
+            "joined": "11/30/2022",
+            "firstName": "Samantha",
+            "lastName": "Clark",
+            "middleName": "Jane",
+            "dob": "10/18/1980",
+            "email": "s.clark80@test.com",
+            "notes": "Account temporarily on hold for security verification.",
+            "status": "Delinquent"
+        }
+    ]
+}
