@@ -14,11 +14,28 @@ public class ProductRepository : IProductRepository
 
     private List<Product> LoadProductsFromJsonFile(string fileName)
     {
+        string filePath = Path.Combine(AppContext.BaseDirectory, fileName);
+        try
+        {
+            string json = File.ReadAllText(filePath);
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            var data = JsonSerializer.Deserialize<ProductsJsonData>(json, options);
+            return data.Products;
+        }
+        catch (Exception ex)
+        {
+            return new List<Product>();
+        }
+        /*
         // create a filestream and read the input file
         using FileStream json = File.OpenRead(fileName);
         // deserialize the filestream
         List<Product> products = JsonSerializer.Deserialize<List<Product>>(json, _options);
         return products;
+        */
     }
 
     public List<Product> GetProducts()
@@ -31,6 +48,11 @@ public class ProductRepository : IProductRepository
     {
         // return the specific product using its id
         return _products.FirstOrDefault(p => p.id == id);
+    }
+
+    public class ProductsJsonData
+    {
+        public List<Product> Products { get; set; }
     }
 
     private readonly JsonSerializerOptions _options = new()

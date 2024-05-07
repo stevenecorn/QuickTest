@@ -14,11 +14,28 @@ public class CustomerRepository : ICustomerRepository
 
     private List<Customer> LoadCustomersFromJsonFile(string fileName)
     {
+        string filePath = Path.Combine(AppContext.BaseDirectory, fileName);
+        try
+        {
+            string json = File.ReadAllText(filePath);
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+            var data = JsonSerializer.Deserialize<CustomersJsonData>(json, options);
+            return data.Customers;
+        }
+        catch (Exception ex)
+        {
+            return new List<Customer>();
+        }
+        /*
         // create a filestream and read the input file
         using FileStream json = File.OpenRead(fileName);
         // deserialize the filestream
         List<Customer> customers = JsonSerializer.Deserialize<List<Customer>>(json, _options);
         return customers;
+        */
     }
 
     public List<Customer> GetActiveCustomers()
@@ -47,6 +64,11 @@ public class CustomerRepository : ICustomerRepository
             // add the new customer
             _customers.Add(customer);
         }
+    }
+
+    public class CustomersJsonData
+    {
+        public List<Customer> Customers { get; set; }
     }
 
     private readonly JsonSerializerOptions _options = new()
