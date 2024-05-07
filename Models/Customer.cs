@@ -1,13 +1,14 @@
 // Customer.cs
 public class Customer
 {
-    public string Id { get; set; }
-    public DateTime Joined { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string MiddleName { get; set; }
-    public DateTime Dob { get; set; }
-    public string Email { get; set; }
-    public string Notes { get; set; }
-    public string Status { get; set; }
+    public string id { get; set; } = string.Empty;          // customer id
+    public string joined { get; set; } = string.Empty;      // date the customer joined
+    public string firstName { get; set; } = string.Empty;   // first name of customer
+    public string lastName { get; set; } = string.Empty;    // last name of customer
+    public string middleName { get; set; } = string.Empty;  // middle name of customer
+    public string dob { get; set; } = string.Empty;         // date the customer was born
+    public string email { get; set; } = string.Empty;       // email of customer
+    public string notes { get; set; } = string.Empty;       // notes about the customer
+    public string status { get; set; } = string.Empty;      // status of the customer
+    // (inactive or active)
 }

@@ -1,14 +1,9 @@
 // ProductRepository.cs
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Routing.Constraints;
 
 public class ProductRepository : IProductRepository
 {
+    // private list of products
     private readonly List<Product> _products;
 
     public ProductRepository()
@@ -19,36 +14,27 @@ public class ProductRepository : IProductRepository
 
     private List<Product> LoadProductsFromJsonFile(string fileName)
     {
-        string filePath = Path.Combine(AppContext.BaseDirectory, fileName);
-        try
-        {
-            string json = File.ReadAllText(filePath);
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-            var data = JsonSerializer.Deserialize<ProductsJsonData>(json, options);
-            return data.Products;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error loading products from JSON file: {ex.Message}");
-            return new List<Product>();
-        }
+        // create a filestream and read the input file
+        using FileStream json = File.OpenRead(fileName);
+        // deserialize the filestream
+        List<Product> products = JsonSerializer.Deserialize<List<Product>>(json, _options);
+        return products;
     }
 
     public List<Product> GetProducts()
     {
+        // return the list of products
         return _products;
     }
 
     public Product GetProduct(int id)
     {
-        return _products.FirstOrDefault(p => p.Id == id);
+        // return the specific product using its id
+        return _products.FirstOrDefault(p => p.id == id);
     }
-}
 
-public class ProductsJsonData
-{
-    public List<Product> Products { get; set; }
+    private readonly JsonSerializerOptions _options = new()
+    {
+        PropertyNameCaseInsensitive = true
+    };
 }

@@ -32,3 +32,5 @@ C:\Users\bubba\WebApps\QuickTest\obj\Debug\net8.0\QuickTest.pdb
 C:\Users\bubba\WebApps\QuickTest\obj\Debug\net8.0\QuickTest.genruntimeconfig.cache
 C:\Users\bubba\WebApps\QuickTest\obj\Debug\net8.0\ref\QuickTest.dll
 C:\Users\bubba\WebApps\QuickTest\bin\Debug\net8.0\QuickTest.json
+C:\Users\bubba\WebApps\QuickTest\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\bubba\WebApps\QuickTest\obj\Debug\net8.0\QuickTest.sourcelink.json

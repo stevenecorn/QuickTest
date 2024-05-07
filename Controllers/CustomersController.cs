@@ -33,7 +33,7 @@ public class CustomersController : ControllerBase
     [HttpPost]
     public IActionResult AddOrUpdateCustomer([FromBody] Customer customer)
     {
-        var existingCustomer = _customerRepository.GetCustomer(customer.Id);
+        var existingCustomer = _customerRepository.GetCustomer(customer.email);
         if (existingCustomer != null)
         {
             return BadRequest("Customer already exists.");
